@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 2</title>
+    <style>
+        body{
+            width: 960px;
+            margin: 20px auto 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div,footer, nav ul{
+            background: silver;
+        }
+        main,section,footer{
+            width: 100%;
+            margin-bottom: 10px;
+            display: grid;
+            grid-gap: 10px;
+        }
+        nav{
+            display: grid;
+            grid-template: 80px / repeat(4,1fr);
+            margin-bottom: 20px; 
+        }
+        nav .logo{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-row:1/2;
+            grid-column: 3/5;
+            align-self: center;
+            height: 50px;
+            grid-template: auto / repeat(4,1fr);
+            grid-gap: 20px;
+            justify-items: center;
+            align-content: center;
+        }
+        h3 {
+            font-size: 2.5rem;
+            margin-top: 0.5em;
+            word-spacing: 5px;
+            margin-bottom: 30px;
+        }
+        h4{
+            font-size: 1.5rem;
+            margin-top: 0.5em;
+        }
+        section{
+            height: 300px;
+            grid-template-rows: repeat(2,1fr);
+        }
+        main{
+            height: 475px;
+            grid-template: repeat(3,150px) / repeat(3,1fr) ;
+
+        }
+        footer{
+            height: 35px;
+            justify-items: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+        
+        <nav>
+            <div class="logo">Company Logo</div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        
+    </nav>
+    <header>
+        <h3>Lorem ipsum dolor sit amet, ne saepe<br>phaedrum cotidieque has, natum zril pro ei.</h3>
+        <h4>Cu vel aliquid lobortis deseruisse. Nam at adipisci dignissim forensibus. Qui<br>an recteque maluisset assentior, cu ferri aperiam imperdiet sed.</h4>
+    </header>
+    <main>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </main>
+    <footer>Copyright Notice</footer>
+</body>
+</html>
